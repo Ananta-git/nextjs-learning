@@ -7,7 +7,6 @@ export default function Home() {
       <Header />
       <h1>Welcome to My Website!</h1>
       <p>This is my first Next.js page.</p>
-      <button>Click Me</button>
     </div>
   )
 }
