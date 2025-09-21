@@ -3,10 +3,12 @@ import Header from './components/Header'
 
 export default function Home() {
   return (
-    <div>
+    <div className='min-h-screen bg-gray-100 '>
       <Header />
-      <h1>Welcome to My Website!</h1>
-      <p>This is my first Next.js page.</p>
+      <main className='container mx-auto p-4'>
+        <h1 className='text-3xl font-bold text-center my-8'>Welcome to My Website!</h1>
+        <p className="text-lg text-center">This is my first Next.js page.</p>
+      </main>
     </div>
   )
 }
