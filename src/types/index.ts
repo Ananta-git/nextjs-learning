@@ -6,7 +6,7 @@ export interface NavItem{
 export interface NewsItem{
     id:number
     title:string
-    excerpt:string
+    excerpt:string  
     date:string
     category:string
 }
@@ -15,8 +15,6 @@ export interface FeatureItem{
     title:string
     description:string
     icon: string
-    showAll?: boolean
-    maxDisplay?: number
 }
 
 export interface User{
@@ -26,8 +24,7 @@ export interface User{
     role: 'admin' | 'teacher' | 'student'|'parent'
 }
 
-export interface FeaturesSectionProps {
-  features: FeatureItem[]
+export interface DisplayOptions {
   showAll?: boolean
   maxDisplay?: number
 }

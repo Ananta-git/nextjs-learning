@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { NewsItem } from '@/types';
+import { FeaturesSectionProps } from '@/types'; 
 
 interface NewsSectionProps{
     news: NewsItem[]

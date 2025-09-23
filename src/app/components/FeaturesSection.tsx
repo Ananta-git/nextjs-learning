@@ -1,12 +1,15 @@
 import Link from 'next/link';
-import {FeatureItem} from '@/types';
-import { FeaturesSectionProps } from '@/types';
+import { DisplayOptions, FeatureItem } from '@/types';
+
+interface FeatureSectionProps extends DisplayOptions {
+    features: FeatureItem[]
+}
 
 export default function FeaturesSection({
     features,
     showAll =false,
     maxDisplay = 4
-    }: FeaturesSectionProps){
+    }: FeatureSectionProps){
     //Show only limited features if not showing all
     const displayedFeatures = showAll ? features : features.slice(0, maxDisplay)
     const hasMoreFeatures = features.length > maxDisplay && !showAll
