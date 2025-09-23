@@ -2,7 +2,7 @@
 import { NewsItem, FeatureItem} from '../types'
 
 
-export const newsItem: NewsItem[] = [
+export const newsItems: NewsItem[] = [
     {
         id:1,
         title: 'Annual Sports Day 2025',
@@ -21,7 +21,35 @@ export const newsItem: NewsItem[] = [
         id:3,
         title: 'Exam schedule Published',
         excerpt: 'Final term examination schedule has been published for all classes ...',
-        date: '2025-11-10',
+        date: '2025-11-23',
+        category: 'Academics'   
+    },
+    {
+        id:4,
+        title: 'Exam schedule Published',
+        excerpt: 'Final term examination schedule has been published for all classes ...',
+        date: '2025-11-23',
+        category: 'Academics'   
+    },
+     {
+        id:5,
+        title: 'New computer Lab Inauguration',
+        excerpt: 'The new computer lab with 30 systems will be inaugurated next week',
+        date: '2025-11-20',
+        category: 'Infrastructure'
+    },
+    {
+        id:6,
+        title: 'Exam schedule Published',
+        excerpt: 'Final term examination schedule has been published for all classes ...',
+        date: '2025-11-23',
+        category: 'Academics'   
+    },
+    {
+        id:7,
+        title: 'Exam schedule Published',
+        excerpt: 'Final term examination schedule has been published for all classes ...',
+        date: '2025-11-23',
         category: 'Academics'   
     }
 ]
@@ -34,12 +62,27 @@ export const featureItems: FeatureItem[] = [
   },
   {
     title: 'Modern Facilities',
-    description: 'Our campus features modern classrooms, computer labs, science labs, and library.',
+    description: '“Our school features modern classrooms with interactive boards, computer labs, and science labs.',
     icon: '🏫'
   },
   {
     title: 'Sports & Activities',
     description: 'We encourage students to participate in various sports and extracurricular activities.',
     icon: '⚽'
-  }
+  },
+    {
+    title: 'Cultural Events',
+    description: 'Regular events to celebrate diversity and culture in the school.',
+    icon: '🎉'
+  },
+   {
+    title: 'Safety & Security',
+    description: 'A safe and secure environment for all students.',
+    icon: '🛡️'
+  },
+   {
+    title: 'Modern Classrooms',
+    description: 'Spacious classrooms equipped with interactive boards.',
+    icon: '🏫'
+  },
 ]

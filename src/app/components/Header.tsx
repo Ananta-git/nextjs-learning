@@ -14,7 +14,7 @@ export default function Header({ navItems }: HeaderProps) {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="bg-blue-800 text-white shadow-lg">
+    <header className="bg-gray-900 text-white shadow-lg">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           {/* Logo */}
@@ -27,7 +27,7 @@ export default function Header({ navItems }: HeaderProps) {
 
            
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-6">
+          <nav className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -47,13 +47,18 @@ export default function Header({ navItems }: HeaderProps) {
 
               {/* Mobile Menu Button */}
             <button
-              className="md:hidden text-2xl"
+              className="
+                md:hidden 
+                text-2xl 
+                cursor-pointer
+              "
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
             >
               ☰
             </button>
         </div>
-        
+
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden mt-4 space-y-2 pb-4">

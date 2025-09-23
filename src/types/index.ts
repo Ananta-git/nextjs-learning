@@ -15,6 +15,8 @@ export interface FeatureItem{
     title:string
     description:string
     icon: string
+    showAll?: boolean
+    maxDisplay?: number
 }
 
 export interface User{
@@ -22,4 +24,10 @@ export interface User{
     email:string
     name:string
     role: 'admin' | 'teacher' | 'student'|'parent'
+}
+
+export interface FeaturesSectionProps {
+  features: FeatureItem[]
+  showAll?: boolean
+  maxDisplay?: number
 }
