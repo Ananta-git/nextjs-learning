@@ -17,20 +17,20 @@ export default function NewsSection({
         <section className="py-16">
             <div className="container mx-auto px-4">
                 <div className="flex justify-between items-center mb-12">
-                    <h2 className="text-3xl font-bold text-gray-300"> Latest News & Announcements</h2>
+                    <h2 className="text-3xl font-bold text-gray-700"> Latest News & Announcements</h2>
                     {/*Show View All button oly when there are more features*/}
                     {hasMoreNews&&(
                                 <Link 
-                                    href="/features"
+                                    href="/news"
                                     className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-200"
                                     >
-                                    View All Features
+                                    View All News
                                 </Link>
                             )}
                     </div>
 
                 <div className="grid md:grid-cols-3 gap-6">
-                    {displayedNews.map((features, index) => (
+                    {displayedNews.map((item, index) => (
                         <article 
                             key={item.id}
                             className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-200"
@@ -53,6 +53,14 @@ export default function NewsSection({
                         </article>
                     ))}
                 </div>
+                {/* Show back button when viewing all features*/}
+                {showAll &&(
+                    <div className="text-center mt-8">
+                        <Link href="/" className="bg-gray-600 text-white px-6 py-2 rounded-lg hover:bg-gray-700 transition duration-200">
+                        Back to Home
+                        </Link>
+                    </div>
+                )}
             </div>
         </section>
     )
