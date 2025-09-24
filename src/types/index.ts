@@ -28,3 +28,10 @@ export interface DisplayOptions {
   showAll?: boolean
   maxDisplay?: number
 }
+
+export interface LoginFormData {
+  email: string
+  password: string
+  userType: User['role']
+  rememberMe: boolean
+}

@@ -17,7 +17,6 @@ const navItems: NavItem[] = [
   { label: 'Contact', href: '/contact' }
 ]
 
-
 export default function Home() {
   return (
     <div className='min-h-screen flex flex-col '>
