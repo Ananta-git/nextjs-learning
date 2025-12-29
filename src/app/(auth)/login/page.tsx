@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { LoginFormData, User } from '@/types'
-import LoginForm from '../components/Auth/LoginForm'
+import LoginForm from '../../../components/Auth/LoginForm'
 import { useRouter } from 'next/navigation'
 
 export default function LoginPage() {

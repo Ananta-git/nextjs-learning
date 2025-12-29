@@ -1,11 +1,11 @@
 // Simple homepage example - replace the content in src/app/page.tsx
-import Header from './components/Header'
-import HeroSection from './components/HeroSection'
-import FeaturesSection from './components/FeaturesSection'
-import NewsSection from './components/NewsSection'
-import Footer from './components/Footer'
-import { NavItem } from '../types'
-import {newsItems, featureItems} from '../data/news'
+import Header from '../../components/layout/Header'
+import HeroSection from '../../components/sections/HeroSection'
+import FeaturesSection from '../../components/sections/FeaturesSection'
+import NewsSection from '../../components/sections/NewsSection'
+import Footer from '../../components/layout/Footer'
+import { NavItem } from '../../types'
+import {newsItems, featureItems} from '../../data/news'
 
 const navItems: NavItem[] = [
   { label: 'Home', href: '/' },

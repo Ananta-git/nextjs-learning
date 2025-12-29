@@ -1,8 +1,8 @@
-import Header from '../components/Header';
+import Header from '../../../components/layout/Header';
 import {navItems} from '@/data/navItems'
-import NewsSection from '../components/NewsSection';
+import NewsSection from '../../../components/sections/NewsSection';
 import {newsItems} from '@/data/news'
-import Footer from '../components/Footer';
+import Footer from '../../../components/layout/Footer';
 
 export default function NewsPage() {
   return (

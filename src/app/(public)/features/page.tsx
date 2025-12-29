@@ -1,6 +1,6 @@
-import FeaturesSection from '../components/FeaturesSection'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import FeaturesSection from '../../../components/sections/FeaturesSection'
+import Header from '../../../components/layout/Header'
+import Footer from '../../../components/layout/Footer'
 import { featureItems } from '@/data/news'
 import { navItems } from '@/data/navItems'
 

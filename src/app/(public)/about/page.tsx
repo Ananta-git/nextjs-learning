@@ -1,6 +1,6 @@
-import Header from '../components/Header'
+import Header from '../../../components/layout/Header'
 
-export default function Contact(){
+export default function About(){
     return(
         <div>
      
