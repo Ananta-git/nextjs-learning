@@ -9,12 +9,19 @@ export const publicNavItems: NavItem[] = [
   // { label: 'Login', href: '/login', icon: '🔐' }
 ]
 
-export const navItems: NavItem[] = [
+// Admin Navigation Items
+export const adminNavItems: NavItem[] = [
   { label: 'Dashboard', href: '/admin', icon: '📊' },
   { label: 'Students', href: '/admin/students', icon: '👨‍🎓' },
   { label: 'Teachers', href: '/admin/teachers', icon: '👨‍🏫' },
+  { label: 'Parents', href: '/admin/parents', icon: '👨‍👩‍👧‍👦' },
   { label: 'Classes', href: '/admin/classes', icon: '🏫' },
+  { label: 'Subjects', href: '/admin/subjects', icon: '📚' },
+  { label: 'Attendance', href: '/admin/attendance', icon: '📝' },
+  { label: 'Exams', href: '/admin/exams', icon: '📝' },
+  { label: 'Timetable', href: '/admin/timetable', icon: '📅' },
   { label: 'Reports', href: '/admin/reports', icon: '📈' },
+  { label: 'Notifications', href: '/admin/notifications', icon: '🔔' },
   { label: 'Settings', href: '/admin/settings', icon: '⚙️' },
   { label: 'Logout', href: '/logout', icon: '🚪' }
 ]
@@ -47,3 +54,27 @@ export const parentNavItems: NavItem[] = [
   { label: 'Messages', href: '/parent/messages', icon: '💬' },
   { label: 'Logout', href: '/logout', icon: '🚪' }
 ]
+// Helper function to get navigation based on user role
+export function getNavItemsByRole(role: string): NavItem[] {
+  switch (role) {
+    case 'admin':
+      return adminNavItems
+    case 'teacher':
+      return teacherNavItems
+    case 'student':
+      return studentNavItems
+    case 'parent':
+      return parentNavItems
+    default:
+      return publicNavItems
+  }
+}
+
+// All navigation items for reference
+export const allNavItems = {
+  public: publicNavItems,
+  admin: adminNavItems,
+  teacher: teacherNavItems,
+  student: studentNavItems,
+  parent: parentNavItems
+}
