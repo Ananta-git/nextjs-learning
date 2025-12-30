@@ -6,10 +6,10 @@ export const publicNavItems: NavItem[] = [
   { label: 'Features', href: '/features' },
   { label: 'News', href: '/news' },
   { label: 'Contact', href: '/contact' },
-  { label: 'Login', href: '/login', icon: '🔐' }
+  // { label: 'Login', href: '/login', icon: '🔐' }
 ]
 
-export const adminNavItems: NavItem[] = [
+export const navItems: NavItem[] = [
   { label: 'Dashboard', href: '/admin', icon: '📊' },
   { label: 'Students', href: '/admin/students', icon: '👨‍🎓' },
   { label: 'Teachers', href: '/admin/teachers', icon: '👨‍🏫' },

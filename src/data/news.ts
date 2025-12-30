@@ -56,31 +56,37 @@ export const newsItems: NewsItem[] = [
 
 export const featureItems: FeatureItem[] = [
   {
+    id: 1,
     title: 'Quality Education',
     description: 'We provide quality education with experienced teachers and modern teaching methods.',
     icon: '🎓'
   },
   {
+    id:2,
     title: 'Modern Facilities',
     description: '“Our school features modern classrooms with interactive boards, computer labs, and science labs.',
     icon: '🏫'
   },
   {
+    id:3,
     title: 'Sports & Activities',
     description: 'We encourage students to participate in various sports and extracurricular activities.',
     icon: '⚽'
   },
     {
+    id:4,
     title: 'Cultural Events',
     description: 'Regular events to celebrate diversity and culture in the school.',
     icon: '🎉'
   },
    {
+    id:5,
     title: 'Safety & Security',
     description: 'A safe and secure environment for all students.',
     icon: '🛡️'
   },
    {
+    id:6,
     title: 'Modern Classrooms',
     description: 'Spacious classrooms equipped with interactive boards.',
     icon: '🏫'

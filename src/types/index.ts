@@ -21,6 +21,12 @@ export interface FeatureItem {
   icon: string
 }
 
+export interface DisplayOptions {
+    showAll?: boolean;
+    maxDisplay?: number;
+    // any other options...
+}
+
 export interface User {
   id: number
   email: string
