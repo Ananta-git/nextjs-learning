@@ -48,3 +48,36 @@ export interface DashboardStats {
   icon: string
   change?: string
 }
+
+export interface Teacher {
+  id: string
+  email: string
+  full_name: string
+  phone?: string
+  address?: string
+  qualification?: string
+  specialization?: string
+  date_of_birth?: string
+  hire_date?: string
+  salary?: number
+  is_active: boolean
+  created_at: string
+  updated_at: string
+  last_login?: string
+}
+
+export interface TeacherSubject {
+  id: string
+  teacher_id: string
+  subject_name: string
+  grade: string
+  section?: string
+  academic_year: string
+  created_at: string
+}
+
+export interface LoginFormData {
+  email: string
+  password: string
+  rememberMe: boolean
+}
